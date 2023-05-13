@@ -142,7 +142,6 @@ async def filler_function(
     :param fill_end_event: an event to flag when filling is complete
     :return: None
     """
-
     async for item in input_stream:
         await input_queue.put(item)
 
